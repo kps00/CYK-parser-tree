@@ -1,0 +1,91 @@
+########## rzeczowniki###########
+*** kot ***
+rzeczownik_mianownik->kot-0.25
+rzeczownik_dope³niacz->kota-0.25
+rzeczownik_celownik->kotu-0.1
+rzeczownik_biernik->kota-0.1
+rzeczownik_narzêdnik->kotem-0.1
+rzeczownik_mejscownik->kocie-0.1
+rzeczownik_wo³acz->kocie-0.1
+*** pies ***
+rzeczownik_mianownik->pies-0.25
+rzeczownik_dope³niacz->psa-0.25
+rzeczownik_celownik->psu-0.1
+rzeczownik_biernik->psa-0.1
+rzeczownik_narzêdnik->psem-0.1
+rzeczownik_mejscownik->psie-0.1
+rzeczownik_wo³acz->psie-0.1
+*** Marek ***
+rzeczownik_mianownik->Marek-0.25
+rzeczownik_dope³niacz->Marka-0.25
+rzeczownik_celownik->Markowi-0.1
+rzeczownik_biernik->Marka-0.1
+rzeczownik_narzêdnik->Markiem-0.1
+rzeczownik_mejscownik->Marku-0.1
+rzeczownik_wo³acz->Marku-0.1
+*** Ala ***
+rzeczownik_mianownik->Ala-0.25
+rzeczownik_dope³niacz->Alê-0.25
+rzeczownik_celownik->Ali-0.1
+rzeczownik_biernik->Ali-0.1
+rzeczownik_narzêdnik->Al¹-0.1
+rzeczownik_mejscownik->Ali-0.1
+rzeczownik_wo³acz->Alu-0.1
+########### przymiotniki (tylko meskie)##################3
+*** wielki ***
+przymiotnik_mianownik->wielki-0.25
+przymiotnik_dope³niacz->wielkiego-0.25
+przymiotnik_celownik->wielkiemu-0.1
+przymiotnik_biernik->wielkiego-0.1
+przymiotnik_narzêdnik->wielkim-0.1
+przymiotnik_mejscownik->wielkim-0.1
+przymiotnik_wo³acz->wielki-0.1
+*** czarny ***
+przymiotnik_mianownik->czarny-0.25
+przymiotnik_dope³niacz->czarnego-0.25
+przymiotnik_celownik->czarnemu-0.1
+przymiotnik_biernik->czarnego-0.1
+przymiotnik_narzêdnik->czarnym-0.1
+przymiotnik_mejscownik->czarnym-0.1
+przymiotnik_wo³acz->czarny-0.1
+*** wysoki ***
+przymiotnik_mianownik->wysoki-0.25
+przymiotnik_dope³niacz->wysokiego-0.25
+przymiotnik_celownik->wysokiemu-0.1
+przymiotnik_biernik->wysokiego-0.1
+przymiotnik_narzêdnik->wysokim-0.1
+przymiotnik_mejscownik->wysokim-0.1
+przymiotnik_wo³acz->wysoki-0.1
+################ czasowniki (czas teraŸniejszy, tryb oznajmuj¹cy) ######################
+*** byæ ***
+czasownik_ja->jestem-0.1
+czasownik_ty->jesteœ-0.1
+czasownik_on->jest-0.25
+czasownik_ona->jest-0.3
+czasownik_ono->jest-0.1
+czasownik_my->jesteœmy-0.5
+czasownik_wy->jesteœcie-0.5
+czasownik_oni->s¹-0.5
+*** mieæ ***
+czasownik_ja->mam-0.1
+czasownik_ty->masz-0.1
+czasownik_on->ma-0.25
+czasownik_ona->ma-0.3
+czasownik_ono->ma-0.1
+czasownik_my->mamy-0.05
+czasownik_wy->macie-0.05
+czasownik_oni->maj¹-0.05
+*** goniæ ***
+czasownik_ja->goniê-0.1
+czasownik_ty->gonisz-0.1
+czasownik_on->goni-0.25
+czasownik_ona->goni-0.3
+czasownik_ono->goni-0.1
+czasownik_my->gonimy-0.5
+czasownik_wy->gonicie-0.5
+czasownik_oni->goni¹-0.5
+############### spójniki############################
+spójnik->i-0.6
+spójnik->oraz-0.4
+################ przys³ówki#####################
+przys³ówek->szybko-1

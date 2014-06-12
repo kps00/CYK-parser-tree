@@ -1,0 +1,17 @@
+###### gramatyka ######
+Uproszczona gramatyka która potrafi
+generowaæ proste zdania onajmuj¹ce
+w czasie teraŸniejszym. 
+
+zdanie->rzeczownik_mianownik;grupa_orzeczenia-0.4
+zdanie->rzeczownik_mianownik;czasownik_on-0.1
+zdanie->grupa_podmiotu;grupa_orzeczenia-0.5
+grupa_podmiotu->przymiotnik_mianownik;rzeczownik_mianownik-1.0
+grupa_orzeczenia->czasownik_on;rzeczownik_dope³niacz-0.1
+grupa_orzeczenia->czasownik_ona;rzeczownik_dope³niacz-0.1
+grupa_orzeczenia->czasownik_ono;rzeczownik_dope³niacz-0.03
+grupa_orzeczenia->czasownik_on;dope³nienie-0.37
+grupa_orzeczenia->czasownik_ona;dope³nienie-0.4
+dope³nienie->przymiotnik_dope³niacz;dope³nienie-0.1
+dope³nienie->przymiotnik_dope³niacz;rzeczownik_dope³niacz-0.6
+dope³nienie->przymiotnik_narzêdnik;rzeczownik_narzêdnik-0.3

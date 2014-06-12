@@ -1,0 +1,41 @@
+Pogram stworzony w ramach zajêæ na Uniwersytecie Adama Mickiewicza w Pznaniu
+Autor: Piotr Kowalczyk
+
+1. Wstêp
+CYK-parser to program analizuj¹cy sk³adniê zdania, na podstawie gramatyki
+jêzyka oraz listy s³ów umieszczonych w plikach 'rules.csv' i 'words.csv'.
+Jeœli zdanie jest poprawnie skonstruowane wg. podanej gramatyki zostanie
+wyœwietlone drzewo (b¹dŸ kilka drzew) reprezentuj¹cych sk³adniê gramatyczn¹,
+jêœli zaœ jest niepoprawne, zostanie wyœwietlony odpowiedni komunikat.
+
+2. Definiowanie regu³
+Regu³u w pliku 'rules.csv' zapisane s¹ w postaci normalnej Chomskiego, tzn.
+ka¿da regu³a ma postaæ 2 argumentowego wyra¿enia C->B;A czyli przyk³adowo
+zdanie->grupa_podmiotu;grupa_orzeczenia-1.0
+Znaki terminalne w tej notacji zapisywane s¹ w pliku 'words.csv' i maj¹ postaæ
+A->s³owo-1.0
+Cyfra zapisana po myœlniku oznacza prawdopodobieñstwo z jakim wystêpuje dany
+schemat gramatyczny, przy czym suma prawdopodobieñstw mo¿liwych schematów
+musi sumowaæ siê do 1. Czyli przyk³adowo, jeœli wszystkie regu³y C mo¿na
+zdefiniowaæ dwoma regu³ami
+C->A;B-a
+C->A;D-(1.0-a)
+to a bêdzie liczb¹ rzeczywist¹ z zakresu (0.0-1.0).
+
+3. Parsowanie
+Zeby zdanie zosta³o sparsowane musi istnieæ jakaœ gramatyka na podstawie której
+dane zdanie jest analizowane. Aby to by³o mo¿liwe musimy skonstruowaæ obiekt
+logic.DeepParser
+nastêpnie wczytaæ s³ownik z plików 'rules.csv' i 'words.csv'
+logic.DeepParser.loadDictionary();
+i ju¿ mo¿liwe jest parsowanie za pomoc¹ funkcji
+logic.DeepParser.parse(String sentence)
+
+4. Sentence slpitter
+Obecnei zdania dzielone s¹ jedynie przez spacje, oraz usuwana jest kropka na koñcu.
+Aby otrzymaæ bardziej wyrafinowan¹ operacjê nale¿y zaimplementowaæ j¹ w obiekcie
+logic.SentenceSplitter.split(String sentence)
+
+5. Wyœwietlanie wyników parsingu
+Drzewo wyœwietlane jest przez funkcjê TreeNode.print(), jesli chce siê w inny 
+sposób wyœwietliæ zawartoœc drzewa, to w³aœnie tam nale¿y zajrzeæ. 
